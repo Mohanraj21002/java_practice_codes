@@ -2,7 +2,9 @@ package com.java;
 
 public class coder{
     public static void main(String[] args) {
-        System.out.println("hello training trains");
+        int a=23;
+        int b=25;
+        System.out.println(a+b);
 
     }
 }
