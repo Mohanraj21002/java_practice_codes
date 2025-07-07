@@ -1,18 +1,22 @@
 package com.java;
+public class coder {
 
-public class coder{
-    public static void main(String[] args) {
+        public static void main (String[]args){
+        System.out.println("hello world");
 
-                int n = 5;      // Change this number as needed
-                int fact = 1;   // Factorial starts with 1
-
-                int i = 1;
-                while(i <= n) {
-                    fact = fact * i;
-                    i++;
-                }
-
-                System.out.println("Factorial of " + n + " is: " + fact);
-            }
+        Bank b = new Bank();
+        b.sayhello();
+        Thread t1 = new Thread(new MyTask());
+        t1.start();
+    }}
+class Bank {
+        void sayhello() {
+            System.out.println("Hi training trains Account");
+        }}
+    class MyTask implements Runnable {
+        public void run() {
+            System.out.println("my thread");
+        }
     }
+
 
